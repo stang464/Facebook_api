@@ -10,7 +10,7 @@ export class PostsController {
     const arr = [];
     for (const i in postData) {
       const img = await imagesRandom(Math.floor(Math.random() * 5));
-      const imgProfile =  await imagesPhoto();
+      const imgProfile = await imagesPhoto();
       arr.push({ ...postData[i], images: img, profileImg: imgProfile });
     }
     const res = await baseResponse(STATUS_CODE.STATUS_CODE_200, arr);
