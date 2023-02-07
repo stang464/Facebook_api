@@ -3,8 +3,8 @@ import {
   baseResponse,
   BaseResponseModel,
 } from './../model/responst/BaseResponst';
-import { Controller, Get, Param, Query, Req } from '@nestjs/common';
-import { Menu, menuList } from 'src/model/Menus.model';
+import { Controller, Get, Query } from '@nestjs/common';
+import { menuList } from 'src/model/Menus.model';
 
 @Controller('menus')
 export class MenusController {

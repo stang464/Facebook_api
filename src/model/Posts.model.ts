@@ -11,8 +11,6 @@ export interface Post {
   shareTotal: number;
 }
 
-///https://picsum.photos/id/237/600/450
-
 export const imagesRandom = async (n = 1) => {
   const urlArr = [];
   for (let i = 0; i < n; i++) {
