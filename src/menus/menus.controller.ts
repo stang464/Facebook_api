@@ -1,3 +1,4 @@
+import { STATUS_CODE } from './../constant/statusCode';
 import {
   baseResponse,
   BaseResponseModel,
@@ -13,6 +14,6 @@ export class MenusController {
     //   const arr = menuList;
     //   return arr.sort((a, b) => a.seq - b.seq);
     // }
-    return baseResponse('200', menuList);
+    return baseResponse(STATUS_CODE.STATUS_CODE_200, menuList);
   }
 }
