@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { mockPostData } from '../constant/mockPostsData';
-import { STATUS_CODE } from '../constant/statusCode';
+import { STATUS_CODE, STATUS_DESC } from '../constant/statusCode';
 import { BaseResponse } from '../utils/BaseResponse';
 
 @Injectable()
@@ -27,7 +27,11 @@ export class PostsService {
       const imgProfile = await this.imagesPhoto();
       arr.push({ ...this.postData[i], images: img, profileImg: imgProfile });
     }
-    const res = new BaseResponse(STATUS_CODE.STATUS_CODE_200, arr);
+    const res = new BaseResponse(
+      STATUS_CODE.STATUS_CODE_200,
+      STATUS_DESC.STATUS_CODE_200,
+      arr,
+    );
     return res;
   };
 }
