@@ -151,18 +151,19 @@ export class PostsController {
     const urlArr = [];
     for (let i = 0; i < n; i++) {
       const randomNum = Math.floor(Math.random() * 300);
-      const url = await fetch(
-        `https://picsum.photos/id/${randomNum}/600/450`,
-      ).then((res) => urlArr.push(res.url));
+      // const url = await fetch(
+      //   `https://picsum.photos/id/${randomNum}/600/450`,
+      // ).then((res) => urlArr.push(res.url));
+      urlArr.push(`https://picsum.photos/id/${randomNum}/600/450`);
     }
     return urlArr;
   };
   imagesPhoto = async () => {
     const randomNum = Math.floor(Math.random() * 300);
-    const url = await fetch(`https://picsum.photos/id/${randomNum}/60/60`).then(
-      (res) => res.url,
-    );
-    return url;
+    // const url = await fetch(`https://picsum.photos/id/${randomNum}/60/60`).then(
+    //   (res) => res.url,
+    // );
+    return `https://picsum.photos/id/${randomNum}/60/60`;
   };
 
   async baseResponse(status: string, data: any): Promise<BaseResponseModel> {
