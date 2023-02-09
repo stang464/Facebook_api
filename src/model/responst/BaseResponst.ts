@@ -6,4 +6,3 @@ export interface BaseResponseModel {
   data: any;
   timestemp: Date;
 }
-

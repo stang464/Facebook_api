@@ -8,4 +8,3 @@ export interface Menu {
 export interface MenuList {
   menuList: Array<Menu>;
 }
-

@@ -10,6 +10,4 @@ export interface Post {
   shareTotal: number;
 }
 
-
-
-// export const postData: Array<Post> = 
+// export const postData: Array<Post> =

@@ -1,4 +1,4 @@
-export const menuList = [
+export const mockMenuList = [
   {
     id: 6,
     title: 'Messenger',
